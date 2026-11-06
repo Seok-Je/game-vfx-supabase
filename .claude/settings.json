@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "post_file_edit": {
+      "description": "TypeScript/TSX 파일 수정 후 타입 검사",
+      "patterns": ["**/*.ts", "**/*.tsx"],
+      "enabled": true
+    },
+    "pre_bash_dangerous": {
+      "description": "위험한 명령어 실행 방지",
+      "patterns": ["rm -rf", "git reset --hard", "git push --force"],
+      "enabled": true,
+      "action": "warn"
+    },
+    "env_protection": {
+      "description": "환경변수 파일 보호",
+      "protected_files": [".env.local", ".env.*.local"],
+      "enabled": true
+    }
+  },
+  "environment": {
+    "shell": "bash",
+    "platform": "windows",
+    "node_version": "18+"
+  },
+  "security": {
+    "protect_api_keys": true,
+    "protect_env_files": true,
+    "warn_before_commit": true
+  }
+}
