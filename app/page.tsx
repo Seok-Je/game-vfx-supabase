@@ -69,7 +69,7 @@ export default function Home() {
             </p>
             <ul className="text-xs text-gray-500 dark:text-gray-500 mt-2 space-y-1">
               <li>NEXT_PUBLIC_SUPABASE_URL: {process.env.NEXT_PUBLIC_SUPABASE_URL ? '설정됨' : '미설정'}</li>
-              <li>NEXT_PUBLIC_SUPABASE_ANON_KEY: {process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ? '설정됨' : '미설정'}</li>
+              <li>NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: {process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ? '설정됨' : '미설정'}</li>
             </ul>
           </div>
         </div>
